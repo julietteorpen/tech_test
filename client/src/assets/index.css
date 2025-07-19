@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button {
+  @apply bg-amber-500 text-white text-slate-800  font-bold py-2 px-4 rounded;
+}
+
+.button:hover {
+  @apply bg-amber-600;
+}
+
+.text {
+  @apply text-lg text-gray-700;
+}
+
+.col {
+    @apply flex flex-col
+}
+
+.current-player {
+  @apply font-bold text-3xl mb-4 text-violet-800 underline;
+}
+
+.heading {
+  @apply text-3xl font-bold text-gray-700 mb-4;
+}
+
+.h2 {
+  @apply text-2xl font-bold text-gray-700 mb-2 drop-shadow-sm;
+}
+
+.winner {
+  @apply text-3xl font-black text-rose-500 drop-shadow-md uppercase;
+}
+
+.tile {
+  @apply border-2 border-violet-700
+          w-10 h-10
+          items-center justify-center
+          text-2xl font-bold bg-slate-100 text-violet-900 flex  
+          rounded-md;
+}
+
