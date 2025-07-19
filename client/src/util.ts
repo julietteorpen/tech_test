@@ -1,12 +1,8 @@
 import { XorO } from "./types"
 
-
-
-
 const checkForCompleteLine = (line: (XorO | undefined)[], currentPlayer) => {
     return line.every(tile => tile === currentPlayer)
 }
-
 
 export const checkForWinner = (
     board: (XorO | undefined)[][],
